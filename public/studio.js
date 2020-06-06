@@ -7373,7 +7373,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.card-img[data-v-a91056c8] {\n    height: 100%;\n    width: 100%;\n    -o-object-fit: cover;\n       object-fit: cover;\n    border-bottom-left-radius: 0;\n    border-top-left-radius: 0;\n}\n", ""]);
+exports.push([module.i, ".card-img[data-v-a91056c8] {\n  height: 100%;\n  width: 100%;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border-bottom-left-radius: 0;\n  border-top-left-radius: 0;\n}\n", ""]);
 
 // exports
 
