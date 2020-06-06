@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'path' => env('STUDIO_PATH_NAME', 'studio'),
+    'path' => env('STUDIO_PATH_NAME', 'posts'),
 
     /*
     |--------------------------------------------------------------------------

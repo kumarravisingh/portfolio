@@ -49,6 +49,7 @@ class PostController extends BaseController
         $posts = Post::published()
                      ->withUserMeta()
                      ->orderByDesc('published_at')
+                    ->take(5)
                      ->get();
 
         $posts->each->append('read_time');

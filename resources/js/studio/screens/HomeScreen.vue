@@ -22,7 +22,7 @@
 
         <div class="mt-5 pt-5">
             <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 mt-3">
-                <h1 class="font-serif">Studio</h1>
+                <h1 class="font-serif">Kumar Ravi</h1>
                 <p class="lead text-secondary">A Laravel Publishing Platform</p>
 
                 <main role="main" class="mt-5">

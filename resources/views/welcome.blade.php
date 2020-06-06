@@ -68,7 +68,7 @@
         <div class="max-w-2xl px-6 text-center mx-auto">
             <h2 class="text-3xl font-semibold text-gray-800">Hi, <span class="bg-indigo-600 text-white rounded px-1">I’m Kumar Ravi</span> . Nice to meet you.</h2>
             <p class="text-gray-600 mt-4">
-                I want you to know that <b>Black Lives Matter,</b> and lives of every one belonging
+                <b>Black Lives Matter,</b> and lives of every one belonging
                 to a minority community matter. People who are oppressed from centuries need a push and support from us in their lives,
                 and career, specially in 21st century when we have access to so much knowledge, there is no
                 excuse now that we act like a bunch of ignorant people while having so much access to information around us.
@@ -124,37 +124,18 @@
             <h2 class="text-2xl font-semibold text-gray-800">Latest Posts</h2>
 
             <div class="flex flex-col items-center justify-center mt-6">
-                <a class="max-w-2xl w-full block bg-white shadow-md rounded-md border-t-4 border-indigo-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" href="#">
+                @foreach($posts as $post)
+                <a class="max-w-2xl w-full block bg-white shadow-md rounded-md border-t-4 border-indigo-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" href="{{url('posts').'/'.$post->user_id.'/post-'.$post->id}}">
                     <div class="flex items-center justify-between px-4 py-2">
-                        <h3 class="text-lg font-medium text-gray-700">Easy, Free Laravel CI Using GitHub Actions</h3>
-                        <span class="block text-gray-600 font-light text-sm">20 Jan 2020</span>
+                        <h3 class="text-lg font-medium text-gray-700">{{Str::words($post->title,10)}}</h3>
+                        <span class="block text-gray-600 font-light text-sm">{{$post->published_at->format('d M Y')}}</span>
                     </div>
                 </a>
-
-                <a class="mt-8 max-w-2xl w-full block bg-white shadow-md rounded-md border-t-4 border-indigo-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" href="#">
-                    <div class="flex items-center justify-between px-4 py-2">
-                        <h3 class="text-lg font-medium text-gray-700">Pest: a delightful PHP Testing Framework</h3>
-                        <span class="block text-gray-600 font-light text-sm">29 Oct 2019</span>
-                    </div>
-                </a>
-
-                <a class="mt-8 max-w-2xl w-full block bg-white shadow-md rounded-md border-t-4 border-indigo-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" href="#">
-                    <div class="flex items-center justify-between px-4 py-2">
-                        <h3 class="text-lg font-medium text-gray-700">Using inline SVGs in Vue components</h3>
-                        <span class="block text-gray-600 font-light text-sm">15 Oct 2019</span>
-                    </div>
-                </a>
-
-                <a class="mt-8 max-w-2xl w-full block bg-white shadow-md rounded-md border-t-4 border-indigo-600 transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110" href="#">
-                    <div class="flex items-center justify-between px-4 py-2">
-                        <h3 class="text-lg font-medium text-gray-700">Acceptance Testing Laravel & VueJs Apps with Codeception</h3>
-                        <span class="block text-gray-600 font-light text-sm">3 Oct 2019</span>
-                    </div>
-                </a>
+                @endforeach
             </div>
 
             <div class="flex items-center justify-center mt-12">
-                <a class="flex items-center text-gray-600 hover:underline hover:text-gray-500" href="#">
+                <a class="flex items-center text-gray-600 hover:underline hover:text-gray-500" href="{{url('/posts')}}">
                     <span>View More</span>
 
                     <svg class="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
