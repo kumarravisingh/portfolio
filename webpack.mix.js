@@ -10,3 +10,4 @@ mix.js('resources/js/app.js', 'public/js')
 
 mix.js('resources/js/studio/app.js', 'public/studio.js')
     .sass('resources/sass/studio/app.scss', 'public/studio.css');
+mix.copy('node_modules/@fortawesome/fontawesome-free/webfonts', 'public/webfonts');

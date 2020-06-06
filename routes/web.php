@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/','HomeController@index');
 
 Route::namespace('Studio')->prefix(config('studio.path'))->group(function () {
     Route::prefix('api')->group(function () {

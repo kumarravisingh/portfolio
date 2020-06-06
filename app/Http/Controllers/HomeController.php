@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Canvas\Post;
 
 class HomeController extends Controller
 {
@@ -13,7 +14,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -23,6 +24,13 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $posts = Post::published()
+            ->withUserMeta()
+            ->orderByDesc('published_at')
+            ->get();
+
+        //$posts->each->append('read_time');
+
+        return view('welcome')->with('posts',$posts);
     }
 }
