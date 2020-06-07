@@ -106,6 +106,7 @@
       <path value="$PROJECT_DIR$/vendor/cnvs/canvas" />
       <path value="$PROJECT_DIR$/vendor/cnvs/studio" />
       <path value="$PROJECT_DIR$/vendor/laravel/ui" />
+      <path value="$PROJECT_DIR$/vendor/msztorc/laravel-env" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
