@@ -39,7 +39,14 @@ now click on **My Articles** which will take you to article administration dashb
 
 from here you can explore more about an article and administration
 
-It project is using [Canvas](https://github.com/cnvs/canvas) for article management which has other cool features which will help you in enabling Unsplash to pull stock images in your post.  
+- A user can can access all your published posts on  
+`your-project.com/posts`  
+or by clicking on **View More** section on your home page.
+
+![Article Dashboard](storage/app/public/posts.png?raw=true "Article Dashboard")
+
+
+This project is using [Canvas](https://github.com/cnvs/canvas) for article management which has other cool features which will help you in enabling Unsplash to pull stock images in your post.  
 you can read more about it on [Canvas Readme](https://github.com/cnvs/canvas) page, when you are ready add you [Unsplash](https://unsplash.com/oauth/applications) key in your .env file `CANVAS_UNSPLASH_ACCESS_KEY` section.  
 
 NOTE: before using this on your production deployment please updated app.blade.php and other places for SEO keywords like in your HomeScreen.vue file  
