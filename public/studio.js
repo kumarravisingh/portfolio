@@ -2492,6 +2492,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -2584,6 +2588,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -2639,6 +2647,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_headful__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_headful__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_PostList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PostList */ "./resources/js/studio/components/PostList.vue");
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/studio/components/Navbar.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -2760,6 +2772,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 
 
@@ -2816,6 +2832,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_PostList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/PostList */ "./resources/js/studio/components/PostList.vue");
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/studio/components/Navbar.vue");
 /* harmony import */ var _components_FeaturedPostList__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/FeaturedPostList */ "./resources/js/studio/components/FeaturedPostList.vue");
+//
+//
+//
+//
 //
 //
 //
@@ -86354,149 +86374,143 @@ var render = function() {
           })
         : _vm._e(),
       _vm._v(" "),
-      _c(
-        "navbar",
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "align-content-center text-decoration-none",
-              attrs: { slot: "extra", to: { name: "home" } },
-              slot: "extra"
-            },
-            [
-              _c(
-                "svg",
-                {
-                  staticClass: "menu-icon-svg",
+      _c("navbar", [
+        _c(
+          "a",
+          {
+            staticClass: "align-content-center text-decoration-none",
+            attrs: { slot: "extra", href: "/" },
+            slot: "extra"
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "menu-icon-svg",
+                attrs: {
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor"
+                }
+              },
+              [
+                _c("path", {
                   attrs: {
-                    fill: "none",
-                    viewBox: "0 0 24 24",
-                    stroke: "currentColor"
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "2",
+                    d:
+                      "M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
                   }
-                },
-                [
-                  _c("path", {
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "mx-3 font-large text-decoration-none navbar-menu-item"
+              },
+              [_vm._v("Kumar Ravi")]
+            )
+          ]
+        ),
+        _vm._v(" "),
+        _vm.isReady && _vm.postBelongsToAuthUser
+          ? _c(
+              "div",
+              {
+                staticClass: "dropdown",
+                attrs: { slot: "actions" },
+                slot: "actions"
+              },
+              [
+                _c(
+                  "a",
+                  {
+                    staticClass: "ml-3",
                     attrs: {
-                      "stroke-linecap": "round",
-                      "stroke-linejoin": "round",
-                      "stroke-width": "2",
-                      d:
-                        "M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                      href: "#",
+                      id: "actionDropdownMenu",
+                      role: "button",
+                      "data-toggle": "dropdown",
+                      "aria-haspopup": "true",
+                      "aria-expanded": "false"
                     }
-                  })
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "span",
-                {
-                  staticClass:
-                    "mx-3 font-large text-decoration-none navbar-menu-item"
-                },
-                [_vm._v("Kumar Ravi")]
-              )
-            ]
-          ),
-          _vm._v(" "),
-          _vm.isReady && _vm.postBelongsToAuthUser
-            ? _c(
-                "div",
-                {
-                  staticClass: "dropdown",
-                  attrs: { slot: "actions" },
-                  slot: "actions"
-                },
-                [
-                  _c(
-                    "a",
-                    {
-                      staticClass: "ml-3",
-                      attrs: {
-                        href: "#",
-                        id: "actionDropdownMenu",
-                        role: "button",
-                        "data-toggle": "dropdown",
-                        "aria-haspopup": "true",
-                        "aria-expanded": "false"
-                      }
-                    },
-                    [
-                      _c(
-                        "svg",
-                        {
-                          staticClass: "icon-cog primary",
+                  },
+                  [
+                    _c(
+                      "svg",
+                      {
+                        staticClass: "icon-cog primary",
+                        attrs: {
+                          xmlns: "http://www.w3.org/2000/svg",
+                          width: "22",
+                          viewBox: "0 0 24 24"
+                        }
+                      },
+                      [
+                        _c("path", {
                           attrs: {
-                            xmlns: "http://www.w3.org/2000/svg",
-                            width: "22",
-                            viewBox: "0 0 24 24"
+                            d:
+                              "M6.8 3.45c.87-.52 1.82-.92 2.83-1.17a2.5 2.5 0 0 0 4.74 0c1.01.25 1.96.65 2.82 1.17a2.5 2.5 0 0 0 3.36 3.36c.52.86.92 1.8 1.17 2.82a2.5 2.5 0 0 0 0 4.74c-.25 1.01-.65 1.96-1.17 2.82a2.5 2.5 0 0 0-3.36 3.36c-.86.52-1.8.92-2.82 1.17a2.5 2.5 0 0 0-4.74 0c-1.01-.25-1.96-.65-2.82-1.17a2.5 2.5 0 0 0-3.36-3.36 9.94 9.94 0 0 1-1.17-2.82 2.5 2.5 0 0 0 0-4.74c.25-1.01.65-1.96 1.17-2.82a2.5 2.5 0 0 0 3.36-3.36zM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
                           }
-                        },
-                        [
-                          _c("path", {
-                            attrs: {
-                              d:
-                                "M6.8 3.45c.87-.52 1.82-.92 2.83-1.17a2.5 2.5 0 0 0 4.74 0c1.01.25 1.96.65 2.82 1.17a2.5 2.5 0 0 0 3.36 3.36c.52.86.92 1.8 1.17 2.82a2.5 2.5 0 0 0 0 4.74c-.25 1.01-.65 1.96-1.17 2.82a2.5 2.5 0 0 0-3.36 3.36c-.86.52-1.8.92-2.82 1.17a2.5 2.5 0 0 0-4.74 0c-1.01-.25-1.96-.65-2.82-1.17a2.5 2.5 0 0 0-3.36-3.36 9.94 9.94 0 0 1-1.17-2.82 2.5 2.5 0 0 0 0-4.74c.25-1.01.65-1.96 1.17-2.82a2.5 2.5 0 0 0 3.36-3.36zM12 16a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("circle", {
-                            attrs: { cx: "12", cy: "12", r: "2" }
-                          })
-                        ]
-                      )
-                    ]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass: "dropdown-menu dropdown-menu-right",
-                      attrs: { "aria-labelledby": "actionDropdownMenu" }
-                    },
-                    [
-                      _c(
-                        "a",
-                        {
-                          staticClass: "dropdown-item",
-                          attrs: {
-                            href:
-                              "/" +
-                              _vm.canvasPath +
-                              "/posts/" +
-                              _vm.post.id +
-                              "/edit"
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                    Edit post\n                "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "a",
-                        {
-                          staticClass: "dropdown-item",
-                          attrs: {
-                            href: "/" + _vm.canvasPath + "/stats/" + _vm.post.id
-                          }
-                        },
-                        [
-                          _vm._v(
-                            "\n                    View stats\n                "
-                          )
-                        ]
-                      )
-                    ]
-                  )
-                ]
-              )
-            : _vm._e()
-        ],
-        1
-      ),
+                        }),
+                        _vm._v(" "),
+                        _c("circle", { attrs: { cx: "12", cy: "12", r: "2" } })
+                      ]
+                    )
+                  ]
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass: "dropdown-menu dropdown-menu-right",
+                    attrs: { "aria-labelledby": "actionDropdownMenu" }
+                  },
+                  [
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href:
+                            "/" +
+                            _vm.canvasPath +
+                            "/posts/" +
+                            _vm.post.id +
+                            "/edit"
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                    Edit post\n                "
+                        )
+                      ]
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "a",
+                      {
+                        staticClass: "dropdown-item",
+                        attrs: {
+                          href: "/" + _vm.canvasPath + "/stats/" + _vm.post.id
+                        }
+                      },
+                      [
+                        _vm._v(
+                          "\n                    View stats\n                "
+                        )
+                      ]
+                    )
+                  ]
+                )
+              ]
+            )
+          : _vm._e()
+      ]),
       _vm._v(" "),
       _vm.isReady
         ? _c("div", { staticClass: "mt-5" }, [
@@ -86752,21 +86766,49 @@ var render = function() {
         ? _c("vue-headful", { attrs: { title: _vm.tag.name + " — Studio" } })
         : _vm._e(),
       _vm._v(" "),
-      _c(
-        "navbar",
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "btn btn-sm btn-outline-secondary",
-              attrs: { slot: "extra", to: { name: "home" } },
-              slot: "extra"
-            },
-            [_vm._v("\n            Go home\n        ")]
-          )
-        ],
-        1
-      ),
+      _c("navbar", [
+        _c(
+          "a",
+          {
+            staticClass: "align-content-center text-decoration-none",
+            attrs: { slot: "extra", href: "/" },
+            slot: "extra"
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "menu-icon-svg",
+                attrs: {
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "2",
+                    d:
+                      "M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "mx-3 font-large text-decoration-none navbar-menu-item"
+              },
+              [_vm._v("Kumar Ravi")]
+            )
+          ]
+        )
+      ]),
       _vm._v(" "),
       _vm.isReady
         ? _c("div", { staticClass: "mt-5 pt-5" }, [
@@ -86842,21 +86884,49 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c(
-        "navbar",
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "btn btn-sm btn-outline-secondary",
-              attrs: { slot: "extra", to: { name: "home" } },
-              slot: "extra"
-            },
-            [_vm._v("\n            Go home\n        ")]
-          )
-        ],
-        1
-      ),
+      _c("navbar", [
+        _c(
+          "a",
+          {
+            staticClass: "align-content-center text-decoration-none",
+            attrs: { slot: "extra", href: "/" },
+            slot: "extra"
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "menu-icon-svg",
+                attrs: {
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "2",
+                    d:
+                      "M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "mx-3 font-large text-decoration-none navbar-menu-item"
+              },
+              [_vm._v("Kumar Ravi")]
+            )
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "mt-5 pt-5" }, [
         _c(
@@ -86933,21 +87003,49 @@ var render = function() {
         ? _c("vue-headful", { attrs: { title: _vm.topic.name + " — Studio" } })
         : _vm._e(),
       _vm._v(" "),
-      _c(
-        "navbar",
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "btn btn-sm btn-outline-secondary",
-              attrs: { slot: "extra", to: { name: "home" } },
-              slot: "extra"
-            },
-            [_vm._v("\n            Go home\n        ")]
-          )
-        ],
-        1
-      ),
+      _c("navbar", [
+        _c(
+          "a",
+          {
+            staticClass: "align-content-center text-decoration-none",
+            attrs: { slot: "extra", href: "/" },
+            slot: "extra"
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "menu-icon-svg",
+                attrs: {
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "2",
+                    d:
+                      "M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "mx-3 font-large text-decoration-none navbar-menu-item"
+              },
+              [_vm._v("Kumar Ravi")]
+            )
+          ]
+        )
+      ]),
       _vm._v(" "),
       _vm.isReady
         ? _c("div", { staticClass: "mt-5 pt-5" }, [
@@ -87023,21 +87121,49 @@ var render = function() {
         }
       }),
       _vm._v(" "),
-      _c(
-        "navbar",
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "btn btn-sm btn-outline-secondary",
-              attrs: { slot: "extra", to: { name: "home" } },
-              slot: "extra"
-            },
-            [_vm._v("\n            Go home\n        ")]
-          )
-        ],
-        1
-      ),
+      _c("navbar", [
+        _c(
+          "a",
+          {
+            staticClass: "align-content-center text-decoration-none",
+            attrs: { slot: "extra", href: "/" },
+            slot: "extra"
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "menu-icon-svg",
+                attrs: {
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "2",
+                    d:
+                      "M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "mx-3 font-large text-decoration-none navbar-menu-item"
+              },
+              [_vm._v("Kumar Ravi")]
+            )
+          ]
+        )
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "mt-5 pt-5" }, [
         _c(
@@ -87120,21 +87246,49 @@ var render = function() {
           })
         : _vm._e(),
       _vm._v(" "),
-      _c(
-        "navbar",
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "btn btn-sm btn-outline-secondary",
-              attrs: { slot: "extra", to: { name: "home" } },
-              slot: "extra"
-            },
-            [_vm._v("\n            Go home\n        ")]
-          )
-        ],
-        1
-      ),
+      _c("navbar", [
+        _c(
+          "a",
+          {
+            staticClass: "align-content-center text-decoration-none",
+            attrs: { slot: "extra", href: "/" },
+            slot: "extra"
+          },
+          [
+            _c(
+              "svg",
+              {
+                staticClass: "menu-icon-svg",
+                attrs: {
+                  fill: "none",
+                  viewBox: "0 0 24 24",
+                  stroke: "currentColor"
+                }
+              },
+              [
+                _c("path", {
+                  attrs: {
+                    "stroke-linecap": "round",
+                    "stroke-linejoin": "round",
+                    "stroke-width": "2",
+                    d:
+                      "M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  }
+                })
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "span",
+              {
+                staticClass:
+                  "mx-3 font-large text-decoration-none navbar-menu-item"
+              },
+              [_vm._v("Kumar Ravi")]
+            )
+          ]
+        )
+      ]),
       _vm._v(" "),
       _vm.isReady
         ? _c("div", { staticClass: "mt-5 pt-5" }, [

@@ -52,7 +52,9 @@
                             </div>
                             <div class="dropdown absolute mt-8 z-0" style="display: none;">
                                 <div class="bg-white flex flex-col items-end mt-2 border border-gray-200 rounded-sm shadow-lg">
-                                    <a title="My components" href="/u/kumarravisingh" class="block text-secondary opacity-75 hover:opacity-100 text-sm px-4 py-2 whitespace-no-wrap text-right">My components</a>
+                                    <a title="My components" href="{{url('/article')}}" class="block text-secondary opacity-75 hover:opacity-100 text-sm px-4 py-2 whitespace-no-wrap text-right">
+                                        My Articles
+                                    </a>
                                     <form id="logout-form" class="leading-none" action="{{ route('logout') }}" method="POST">
                                         {{csrf_field()}}
                                         <button class="block text-secondary opacity-75 hover:opacity-100 text-sm px-4 py-2 whitespace-no-wrap text-right" >{{ __('Logout') }}</button>

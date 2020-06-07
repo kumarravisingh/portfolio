@@ -9,13 +9,13 @@
         />
 
         <navbar>
-            <router-link slot="extra" :to="{name: 'home'}" class="align-content-center text-decoration-none">
+            <a slot="extra" href="/" class="align-content-center text-decoration-none">
                 <svg fill="none" class="menu-icon-svg" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
                 </svg>
 
                 <span class="mx-3 font-large text-decoration-none navbar-menu-item">Kumar Ravi</span>
-            </router-link>
+            </a>
 
             <div v-if="isReady && postBelongsToAuthUser" class="dropdown" slot="actions">
                 <a href="#" id="actionDropdownMenu" class="ml-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

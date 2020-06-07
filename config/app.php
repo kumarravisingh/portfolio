@@ -19,8 +19,8 @@ return [
      * disable login button
      */
 
-    'can_login' =>  env('CAN_LOGIN',false),
-    'can_register' =>  env('CAN_REGISTER',false),
+    'can_login' =>  env('CAN_LOGIN',true),
+    'can_register' =>  env('CAN_REGISTER',true),
 
     /*
     |--------------------------------------------------------------------------
