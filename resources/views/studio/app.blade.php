@@ -15,7 +15,7 @@
     <title>{{ config('app.name') }}</title>
 
     <link rel="canonical">
-    <link href="{{ mix('studio.css') }}" rel="stylesheet">
+    <link href="{{ mix('css/studio.css') }}" rel="stylesheet">
 
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Karla|Merriweather:400,700">
@@ -33,6 +33,6 @@
     window.Studio = @json($scripts);
 </script>
 
-<script src="{{ asset('studio.js') }}" defer></script>
+<script src="{{ asset('js/studio.js') }}" defer></script>
 </body>
 </html>
