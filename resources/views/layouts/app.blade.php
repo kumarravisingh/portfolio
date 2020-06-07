@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="laravel developer in ncr, laravel developer in delhi, experienced laravel web developer remote"/>
+    <meta name="description" content="kumar ravi is experienced laravel developer, Technology in his hand includes laravel, AWS, vue etc. can work in ncr, gurugram, remote.">
+    <meta name="author" content="kumar ravi">
+    <title>Ravi | Laravel Developer</title>
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
