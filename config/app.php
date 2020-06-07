@@ -15,6 +15,13 @@ return [
 
     'name' => env('APP_NAME', 'Laravel'),
 
+    /**
+     * disable login button
+     */
+
+    'can_login' =>  env('CAN_LOGIN',false),
+    'can_register' =>  env('CAN_REGISTER',false),
+
     /*
     |--------------------------------------------------------------------------
     | Application Environment

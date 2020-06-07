@@ -8,6 +8,7 @@
                 <div class="card-header">{{ __('Login') }}</div>
 
                 <div class="card-body">
+                    @if(config('app.can_login'))
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
@@ -65,6 +66,12 @@
                             </div>
                         </div>
                     </form>
+                    @else
+                        <div class="alert alert-danger">
+                            Login functionality is disabled by admin
+                        </div>
+                        <a href="{{url('/')}}" class="btn btn-success">Back To Home</a>
+                    @endif
                 </div>
             </div>
         </div>

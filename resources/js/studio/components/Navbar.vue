@@ -1,13 +1,24 @@
 <template>
     <nav class="navbar fixed-top py-3">
-        <div class="d-flex justify-content-between col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 col-md-12 px-0">
+        <div class="container justify-content-between  col-md-10 px-6">
             <slot name="extra"></slot>
 
             <div class="align-items-center">
-                <router-link :to="{name:'tags'}" class="text-muted text-decoration-none">
+                <a class=" mx-2 social-icons pt-2" target="_blank" href="https://www.linkedin.com/in/kumarravisingh/">
+                    <i class="fab fa-linkedin fa-2x"></i>
+                </a>
+
+                <a class=" mx-2 social-icons pt-2" target="_blank" href="https://twitter.com/kumarravi_me">
+                    <i class="fab fa-twitter fa-2x"></i>
+                </a>
+
+                <a class=" mx-2 social-icons pt-2" target="_blank" href="https://github.com/kumarravisingh">
+                    <i class="fab fa-github fa-2x"></i>
+                </a>
+                <router-link :to="{name:'tags'}" class="navbar-menu-item text-decoration-none">
                     Tags
                 </router-link>
-                <router-link :to="{name:'topics'}" class="text-muted text-decoration-none ml-3">
+                <router-link :to="{name:'topics'}" class="navbar-menu-item text-decoration-none ml-2">
                     Topics
                 </router-link>
 
@@ -38,7 +49,6 @@
                     </div>
                 </div>
 
-                <a v-else class="text-muted text-decoration-none ml-3" href="/login">Sign in</a>
             </div>
         </div>
     </nav>

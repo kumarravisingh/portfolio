@@ -40,6 +40,10 @@ Route::namespace('Studio')->prefix(config('studio.path'))->group(function () {
     Route::get('/{view?}', 'ViewController')->where('view', '(.*)')->name('studio');
 });
 
-Auth::routes();
+Auth::routes([
+    'register' => config('app.can_register'),
+    'reset' => false,
+    'verify' => false,
+]);
 
 Route::get('/home', 'HomeController@index')->name('home');

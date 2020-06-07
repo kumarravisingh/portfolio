@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'path' => env('CANVAS_PATH_NAME', 'canvas'),
+    'path' => env('CANVAS_PATH_NAME', 'article'),
 
     /*
     |--------------------------------------------------------------------------

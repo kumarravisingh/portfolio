@@ -2,7 +2,29 @@
 
 .navbar {
     background: rgba(255, 255, 255, .97);
-    box-shadow: $box-shadow;
+}
+.navbar-menu-item{
+    color: $gray-800;
+    font-style: normal;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.social-icons{
+    font-size: 0.9em;
+    color: $gray-800;
+    //hover:$indigo;
+    bottom: -5px;
+    position:relative;
+}
+.menu-icon-svg{
+    height: 2rem;
+    width: 2rem;
+    margin-bottom: -10px;
+    vertical-align: initial;
+}
+.nav-title-text{
+    font-size: 1.125rem;
+    font-weight: bold;
 }
 
 .primary {
@@ -47,5 +69,11 @@
 @import '~bootstrap/scss/variables';
 @import '~bootstrap/scss/mixins';
 
+
 @import '~bootstrap';
+
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/brands';
 

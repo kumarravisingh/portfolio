@@ -27,9 +27,11 @@
                     </a>
 
                     @guest
+                        @if(config('app.can_login'))
                         <a class="flex items-center font-medium mx-2 text-gray-800 hover:text-indigo-600 text-lg" href="{{ route('login') }}">
                         {{ __('Login') }}
                         </a>
+                        @endif
 
                         @if(Route::has('register'))
                             <a class="flex items-center font-medium mx-2 text-gray-800 hover:text-indigo-600 text-lg" href="{{ route('register') }}">

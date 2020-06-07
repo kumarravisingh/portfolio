@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Http\Controllers\Auth\Request;
+use Auth;
 
 class LoginController extends Controller
 {
@@ -37,4 +39,38 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+    /**
+     * The user has been authenticated.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  mixed  $user
+     * @return mixed
+     */
+    protected function authenticated($request, $user)
+    {
+
+        if(config('app.can_login')){
+            return redirect(RouteServiceProvider::HOME);
+        }else{
+            Auth::logout();
+            return redirect(RouteServiceProvider::HOME);
+        }
+
+    }
+
+    /**
+     * Show the application's login form.
+     *
+     * @return \Illuminate\View\View
+     */
+    public function showLoginForm()
+    {
+        if(config('app.can_login')){
+            return view('auth.login');
+        }else{
+            Auth::logout();
+            return redirect(RouteServiceProvider::HOME);
+        }
+    }
+
 }
