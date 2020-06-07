@@ -158,7 +158,7 @@
                 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <div class="max-w-xs w-full">
                         <div class="flex items-center justify-center  bg-white border-b-8 border-teal-400 rounded-md overflow-hidden">
-                            <img class="object-cover " src="{{url('/multisheet.png')}}" alt="">
+                            <img class="object-cover " src="{{url('/storage/multisheet.png')}}" alt="">
                         </div>
 
                         <a href="https://github.com/kumarravisingh/laravel-import-multisheet-excel-with-formula" target="_blank" class="block bg-gray-700 mt-5 rounded-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
@@ -176,7 +176,7 @@
 
                     <div class="max-w-xs w-full">
                         <div class="flex items-center justify-center bg-white border-b-8 border-teal-400 rounded-md overflow-hidden">
-                            <img class="object-cover" src="{{url('/lara-count.png')}}" alt="">
+                            <img class="object-cover" src="{{url('/storage/lara-count.png')}}" alt="">
                         </div>
 
                         <a href="https://github.com/kumarravisingh/laraconcountdown" target="_blank" class="block bg-gray-700 mt-5 rounded-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
@@ -190,7 +190,7 @@
 
                     <div class="max-w-xs w-full">
                         <div class="flex items-center justify-center bg-white border-b-8 border-teal-400 rounded-md overflow-hidden">
-                            <img class="object-cover" src="{{url('/docker-legacy.png')}}" alt="">
+                            <img class="object-cover" src="{{url('/storage/docker-legacy.png')}}" alt="">
                         </div>
 
                         <a href="https://github.com/kumarravisingh/docker-legacy" target="_blank" class="block bg-gray-700 mt-5 rounded-md overflow-hidden transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-110">
