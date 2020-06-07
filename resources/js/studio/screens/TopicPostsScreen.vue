@@ -2,7 +2,7 @@
     <div>
         <vue-headful
             v-if="isReady"
-            :title="topic.name + ' — Studio'"
+            :title="topic.name + ' — Kumar Ravi'"
         />
 
         <navbar>

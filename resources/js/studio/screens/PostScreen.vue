@@ -2,7 +2,7 @@
     <div>
         <vue-headful
             v-if="isReady"
-            :title="post.title + ' — Studio'"
+            :title="post.title + ' — Kumar Ravi'"
             :description="post.summary"
             :image="post.featured_image"
             :url="meta.canonical_link"

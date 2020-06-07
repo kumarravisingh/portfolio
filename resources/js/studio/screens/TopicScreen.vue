@@ -1,8 +1,9 @@
 <template>
     <div>
         <vue-headful
-            title="Studio — Topics"
-            description="Topics are great for broadly grouping your posts."
+            title="Kumar Ravi | Laravel Developer"
+            description="kumar ravi is experienced laravel developer, Technology in his hand includes laravel, AWS, vue etc. can work remote."
+            keywords="laravel developer in ncr, laravel developer in delhi, experienced laravel web developer remote"
         />
 
         <navbar>

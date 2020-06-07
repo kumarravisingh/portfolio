@@ -7,14 +7,10 @@
     <meta name="description" content="">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <meta property="og:image" content="">
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
-
-    <meta name="twitter:image" content="">
-    <meta name="twitter:title" content="">
-    <meta name="twitter:description" content="">
-    <meta name="twitter:card" content="summary">
+    <meta name="keywords" content="laravel developer in ncr, laravel developer in delhi, experienced laravel web developer remote"/>
+    <meta name="description" content="kumar ravi is experienced laravel developer, Technology in his hand includes laravel, AWS, vue etc. can work in ncr, gurugram, remote.">
+    <meta name="author" content="kumar ravi">
+    <title>Ravi | Laravel Developer</title>
 
     <title>{{ config('app.name') }}</title>
 

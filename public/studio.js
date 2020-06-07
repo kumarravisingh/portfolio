@@ -2190,6 +2190,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -2592,6 +2593,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 
 
 
@@ -2739,6 +2741,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_headful__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(vue_headful__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _components_Navbar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/Navbar */ "./resources/js/studio/components/Navbar.vue");
 /* harmony import */ var _components_TaxonomyGrid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/TaxonomyGrid */ "./resources/js/studio/components/TaxonomyGrid.vue");
+//
 //
 //
 //
@@ -86207,9 +86210,11 @@ var render = function() {
     [
       _c("vue-headful", {
         attrs: {
-          title: "Studio — A Laravel publishing platform",
+          title: "Kumar Ravi | Laravel Developer",
           description:
-            "Sometimes creating a blog is easier said than done. With Canvas, it's just easier."
+            "kumar ravi is experienced laravel developer, Technology in his hand includes laravel, AWS, vue etc. can work remote.",
+          keywords:
+            "laravel developer in ncr, laravel developer in delhi, experienced laravel web developer remote"
         }
       }),
       _vm._v(" "),
@@ -86366,7 +86371,7 @@ var render = function() {
       _vm.isReady
         ? _c("vue-headful", {
             attrs: {
-              title: _vm.post.title + " — Studio",
+              title: _vm.post.title + " — Kumar Ravi",
               description: _vm.post.summary,
               image: _vm.post.featured_image,
               url: _vm.meta.canonical_link
@@ -86763,7 +86768,9 @@ var render = function() {
     "div",
     [
       _vm.isReady
-        ? _c("vue-headful", { attrs: { title: _vm.tag.name + " — Studio" } })
+        ? _c("vue-headful", {
+            attrs: { title: _vm.tag.name + " — Kumar Ravi" }
+          })
         : _vm._e(),
       _vm._v(" "),
       _c("navbar", [
@@ -86879,8 +86886,11 @@ var render = function() {
     [
       _c("vue-headful", {
         attrs: {
-          title: "Studio — Tags",
-          description: "Tags are great for describing the details of your posts"
+          title: "Kumar Ravi | Laravel Developer",
+          description:
+            "kumar ravi is experienced laravel developer, Technology in his hand includes laravel, AWS, vue etc. can work remote.",
+          keywords:
+            "laravel developer in ncr, laravel developer in delhi, experienced laravel web developer remote"
         }
       }),
       _vm._v(" "),
@@ -87000,7 +87010,9 @@ var render = function() {
     "div",
     [
       _vm.isReady
-        ? _c("vue-headful", { attrs: { title: _vm.topic.name + " — Studio" } })
+        ? _c("vue-headful", {
+            attrs: { title: _vm.topic.name + " — Kumar Ravi" }
+          })
         : _vm._e(),
       _vm._v(" "),
       _c("navbar", [
@@ -87116,8 +87128,11 @@ var render = function() {
     [
       _c("vue-headful", {
         attrs: {
-          title: "Studio — Topics",
-          description: "Topics are great for broadly grouping your posts."
+          title: "Kumar Ravi | Laravel Developer",
+          description:
+            "kumar ravi is experienced laravel developer, Technology in his hand includes laravel, AWS, vue etc. can work remote.",
+          keywords:
+            "laravel developer in ncr, laravel developer in delhi, experienced laravel web developer remote"
         }
       }),
       _vm._v(" "),
@@ -87239,7 +87254,7 @@ var render = function() {
       _vm.isReady
         ? _c("vue-headful", {
             attrs: {
-              title: _vm.user.name + " — Studio",
+              title: _vm.user.name + " — Kumar Ravi",
               description: _vm.summary,
               image: _vm.avatar
             }

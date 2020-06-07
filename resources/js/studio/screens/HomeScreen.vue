@@ -1,8 +1,9 @@
 <template>
     <div>
         <vue-headful
-            title="Studio — A Laravel publishing platform"
-            description="Sometimes creating a blog is easier said than done. With Canvas, it's just easier."
+            title="Kumar Ravi | Laravel Developer"
+            description="kumar ravi is experienced laravel developer, Technology in his hand includes laravel, AWS, vue etc. can work remote."
+            keywords="laravel developer in ncr, laravel developer in delhi, experienced laravel web developer remote"
         />
 
         <navbar>
