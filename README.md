@@ -26,7 +26,7 @@ to generate new default email password combination.
 
 This project contains a article section which after logging in you can acccess by  
 clicking on **My Article** menu
-![Homepage Snapshot](storage/app/public/my-article-menu.png?raw=true "Homepage")
+![My Article Menu](storage/app/public/my-article-menu.png?raw=true "My Article")
 
 - you can enable disable login/registration easily from your .env file  
   open your .env file which has  
@@ -35,7 +35,7 @@ clicking on **My Article** menu
    just set it to false when needed, and you are all set.
    
 now click on **My Articles** which will take you to article administration dashboard of your website.
-![Homepage Snapshot](storage/app/public/article-dashboard.png?raw=true "Homepage")
+![Article Dashboard](storage/app/public/article-dashboard.png?raw=true "Article Dashboard")
 
 from here you can explore more about an article and administration
 
