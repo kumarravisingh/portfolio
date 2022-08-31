@@ -18,7 +18,7 @@
         "laravel-mix": "^5.0.1",
         "lodash": "^4.17.19",
         "medium-zoom": "^1.0.5",
-        "moment-timezone": "^0.5.27",
+        "moment-timezone": "^0.5.35",
         "nprogress": "^0.2.0",
         "popper.js": "^1.12",
         "resolve-url-loader": "^2.3.1",
